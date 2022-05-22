@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPFhello.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFhello" mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Closing="Window_Closing">
+    <Grid x:Name="MainGrid">
+        <Label Content="Hello, WPF!" FontSize="30" FontWeight="Bold" Name="helloLabel" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <GroupBox Height="30" Width="175" Margin="10,55,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"></GroupBox>
+        <Label Content="Име:" Margin="10,58,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="inputName" Width="120" HorizontalAlignment="Left" Margin="62,62,0,0" VerticalAlignment="Top" TextWrapping="Wrap"/>
+        <GroupBox Height="30" Width="175" Margin="10,85,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Име:" Margin="10,88,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="inputName_Copy" Width="120" Margin="62,92,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap"/>
+        <GroupBox Height="30" Width="175" Margin="10,115,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Име:" Margin="10,118,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="inputName_Copy2" Width="120" Margin="62,122,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap"/>
+        <Button x:Name="btnHello" Content="Здрасти" Click="btnHello_Click" Margin="134,154,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <ListBox x:Name="peopleListBox" Margin="0,55,10,0" Width="150" Height="110" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <ListBoxItem Content="Mike"/>
+            <ListBoxItem Content="Lisa"/>
+            <ListBoxItem Content="John"/>
+            <ListBoxItem Content="Mary"/>
+        </ListBox>
+        <Button x:Name="btnHelloToSelectedItem" Content="Здрасти" Width="50" Height="20" Margin="0,174,110,0" HorizontalAlignment="Right" VerticalAlignment="Top" Click="btnHelloToSelectedItem_Click"/>
+    </Grid>
+</Window>
